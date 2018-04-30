@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
 
     <script>
+    /* ここは利用できそう
     var GlobalNavigation = React.createClass({
       render: function() {
         return React.createElement('div', {},
@@ -30,6 +31,7 @@
     });
     var rootElement = React.createElement(GlobalNavigation, {});
     ReactDOM.render(rootElement, document.getElementById("app"));
+    */
 
     /*
     こんな風にコンポーネントを利用できる
@@ -40,6 +42,36 @@
     React.createElement(Footer, {})
     )
     */
+
+    var CounterApp = React.createClass({
+      getInitialState: function() {
+        return {
+          count: 0,     
+        }
+      },
+      render: function() {
+        return React.createElement('div', {},
+          React.createElement('div', {}, "count: " + this.state.count),
+          React.createElement('button', {
+            onClick: function() {
+              this.setState({
+                count: this.state.count + 1
+              })
+            }.bind(this),
+          }, "+1"),
+          React.createElement('button', {
+            onClick: function() {
+              this.setState({
+                count: this.state.count - 1
+              })
+            }.bind(this),
+          }, "-1")
+        )
+      }
+    })
+
+    var rootElement = React.createElement(CounterApp, {})
+    ReactDOM.render(rootElement, document.getElementById("app"))
     </script>
   </body>
 </html>
