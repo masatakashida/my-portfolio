@@ -10,24 +10,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
 
     <script>
-    /*
-    rootElement = React.createElement('div', {},
-      React.createElement('h1', {}, 'Brand'),
-      React.createElement('ul', {},
-        React.createElement('li', {},
-          React.createElement('a', { href: '/about'}, 'About')
-        ),
-        React.createElement('li', {},
-          React.createElement('a', { href: '/news'}, 'News')
-        ),
-        React.createElement('li', {},
-          React.createElement('a', { href: '/contact-us'}, 'Contact Us')
-        )
-      )
-    )
-    ReactDOM.render(rootElement, document.getElementById('app'));
-    */
-
     var GlobalNavigation = React.createClass({
       render: function() {
         return React.createElement('div', {},
@@ -48,6 +30,16 @@
     });
     var rootElement = React.createElement(GlobalNavigation, {});
     ReactDOM.render(rootElement, document.getElementById("app"));
+
+    /*
+    こんな風にコンポーネントを利用できる
+    rootElement = createElement('div', {},
+    React.createElement(GlobalNavigation, {}),
+    React.createElement(SideBar, {}),
+    React.createElement('div', {} 'This is main contents'),
+    React.createElement(Footer, {})
+    )
+    */
     </script>
   </body>
 </html>
