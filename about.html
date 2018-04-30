@@ -28,6 +28,16 @@
     });
 
     // Main commponent
+    var Btn = React.createClass({
+      render: function() {
+        return React.createElement('div', {},
+          React.createElement('button', {}, 'music'),
+          React.createElement('button', {}, 'music'),
+          React.createElement('button', {}, 'music'),
+        )
+      }
+    });
+
     var CounterApp = React.createClass({
       getInitialState: function() {
         return {
@@ -67,6 +77,7 @@
     // コンポーネントをまとめる
     var rootElement = React.createElement('div', {},
       React.createElement(Header, {}),
+      React.createElement(Btn, {}),
       React.createElement(CounterApp, {}),
       React.createElement(Footer, {}),
     )
