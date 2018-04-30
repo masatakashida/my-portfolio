@@ -5,7 +5,6 @@
   </head>
   <body>
     <div id="app"></app>
-    <div id="container"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
@@ -23,6 +22,14 @@
         this.setState({modalIsOpen: false});
       },
       render: function() {
+        return React.createElement('div', {},
+          React.createElement('button', { onClick : {this.openModal} }, 'Open Modal'),
+          React.createElement('Modal', {},
+            React.createElement('button', {},),
+            React.createElement('div', {}, 'I am a modal')
+          )
+        )
+        /*
         return (
           <div>
             <button onClick={this.openModal}>Open Modal</button>
@@ -43,6 +50,7 @@
             </Modal>
           </div>
         );
+        */
       }
     });
     // Header component
@@ -120,6 +128,7 @@
       React.createElement(Header, {}),
       React.createElement(Btn, {}),
       React.createElement(CounterApp, {}),
+      React.createElement(Modal, {}),
       React.createElement(Footer, {}),
     )
     ReactDOM.render(rootElement, document.getElementById("app"))
