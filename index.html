@@ -5,11 +5,46 @@
   </head>
   <body>
     <div id="app"></app>
+    <div id="container"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-modal/3.4.4/react-modal.min.js"></script>
 
     <script>
+    var Modal = React.createClass({
+      getInitialState: function() {
+        return { modalIsOpen: false };
+      },
+      openModal: function() {
+        this.setState({modalIsOpen: true});
+      },
+      closeModal: function() {
+        this.setState({modalIsOpen: false});
+      },
+      render: function() {
+        return (
+          <div>
+            <button onClick={this.openModal}>Open Modal</button>
+            <Modal
+              isOpen={this.state.modalIsOpen}
+              onRequestClose={this.closeModal}
+            >
+            <h2>Hello</h2>
+            <button onClick={this.closeModal}>close</button>
+            <div>I am a modal</div>
+            <form>
+              <input />
+              <button>tab navigation</button>
+              <button>stays</button>
+              <button>inside</button>
+              <button>the modal</button>
+            </form>
+            </Modal>
+          </div>
+        );
+      }
+    });
     // Header component
     var Header = React.createClass({
       render: function() {
