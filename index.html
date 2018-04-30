@@ -10,7 +10,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
 
     <script>
-    /* ここは利用できそう
     var GlobalNavigation = React.createClass({
       render: function() {
         return React.createElement('div', {},
@@ -31,17 +30,6 @@
     });
     var rootElement = React.createElement(GlobalNavigation, {});
     ReactDOM.render(rootElement, document.getElementById("app"));
-    */
-
-    /*
-    こんな風にコンポーネントを利用できる
-    rootElement = createElement('div', {},
-    React.createElement(GlobalNavigation, {}),
-    React.createElement(SideBar, {}),
-    React.createElement('div', {} 'This is main contents'),
-    React.createElement(Footer, {})
-    )
-    */
 
     var CounterApp = React.createClass({
       getInitialState: function() {
@@ -69,8 +57,12 @@
         )
       }
     })
-
-    var rootElement = React.createElement(CounterApp, {})
+    
+    var rootElement = React.createElement('div', {},
+      React.createElement(GlobalNavigation, {}),
+      React.createElement(CounterApp, {}),
+    )
+    //var rootElement = React.createElement(CounterApp, {})
     ReactDOM.render(rootElement, document.getElementById("app"))
     </script>
   </body>
