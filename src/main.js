@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {HeaderComponent} from './header-component';
+import {MainComponent} from './main-component';
 import {SubComponent} from './sub-component';
 import {FooterComponent} from './footer-component';
 
@@ -10,12 +11,12 @@ class App extends React.Component {
     return (
       <div>
         <HeaderComponent name="志田雅貴" />
-        <h1>Hello React</h1>
+        <MainComponent name="志田雅貴" />
         <SubComponent name="Counter" />
         <FooterComponent name="志田雅貴" />
       </div>
     );
   }
 }
-console.log('Welcome!');
+console.log('Welcome! My Portfolio!');
 ReactDOM.render(<App/>, document.querySelector('#app'));
