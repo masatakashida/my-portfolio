@@ -16,7 +16,7 @@ export class SubComponent extends React.Component {
     this.setState({
       type: this.state.count = 1,
       title: "タイトル１",
-      text: "サンプル１"
+      text: <p>テキスト１</p>
     });
   }
 
@@ -25,7 +25,7 @@ export class SubComponent extends React.Component {
     this.setState({
       type: this.state.count = 2,
       title: "タイトル２",
-      text: <p>テキスト</p>
+      text: <p>テキスト２</p>
     });
   }
 
