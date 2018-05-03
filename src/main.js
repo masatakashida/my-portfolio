@@ -12,7 +12,7 @@ class App extends React.Component {
       <div>
         <HeaderComponent name="志田雅貴" />
         <MainComponent name="志田雅貴" />
-        <SubComponent name="Counter" />
+        <SubComponent name="music" />
         <FooterComponent name="志田雅貴" />
       </div>
     );

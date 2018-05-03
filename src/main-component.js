@@ -40,8 +40,8 @@ export class MainComponent extends React.Component {
           <p>-準備中</p>
           <p>S-StoryBook</p>
           <p>-開発中</p>
-          <p>AD変換</p>
           <p>自動運転アルゴリズム</p>
+          <p>AD変換</p>
           <iframe src="https://www.youtube.com/embed/SUEkDbkZ4pc" frameBorder="0" allow="encrypted-media" allowFullScreen></iframe>
           <p>アームクローラー 走行テスト</p>
           <iframe src="https://www.youtube.com/embed/wTjc6jlNvQE" frameBorder="0" allow="encrypted-media" allowFullScreen></iframe>
