@@ -1,121 +1,20 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>志田雅貴</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/javascript" src="./dist/app.js"></script>
-    <div id="app"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-modal/3.4.4/react-modal.min.js"></script>
-
-    <script>
-    var Modal = React.createClass({
-
-      getInitialState: function() {
-        return { 
-          modalIsOpen: false,
-        };
-      },
-      openModal: function() {
-        this.setState({modalIsOpen: true});
-      },
-      closeModal: function() {
-        this.setState({modalIsOpen: false});
-      },
-      render: function() {
-        return React.createElement('div', {},
-          React.createElement('button',{ onClick : this.openModal }, 'Opne Modal'),
-          React.createElement('Modal', { isOpen : this.state.modalIsOpen, onRequestClose : this.closeModal }, 
-            React.createElement('h2', {}, 'sample'),
-            React.createElement('button', { onClick : this.closeModal }, 'close'),
-            React.createElement('div', {}, 'I am a modal')
-          )
-        )
-      }
-    });
-    // Header component
-    var Header = React.createClass({
-      render: function() {
-        return React.createElement('header', {},
-          React.createElement('h1', {}, '志田雅貴'),
-          React.createElement('ul', {},
-            React.createElement('li', {},
-              React.createElement('a', { href: './about'}, 'About')
-            ),
-            React.createElement('li', {},
-              React.createElement('a', { href: './contact'}, 'Contact')
-            )
-          )
-        )
-      }
-    });
-
-    // Main commponent
-    var Btn = React.createClass({
-      render: function() {
-        return React.createElement('div', {},
-          React.createElement('button', {}, 'music'),
-          React.createElement('button', {}, 'music'),
-          React.createElement('button', {}, 'music'),
-        )
-      }
-    });
-
-    // 新しいコンポーネントを追加する。
-    // 画面表示の状態を保持する
-    // ポップアップするには、どんな機能が必要か考える
-    // 
-    // var Dialog = React.createClass({});
-
-    var CounterApp = React.createClass({
-      getInitialState: function() {
-        return {
-          count: 0,     
-        }
-      },
-      render: function() {
-        return React.createElement('div', {},
-          React.createElement('div', {}, "count: " + this.state.count),
-          React.createElement('button', {
-            onClick: function() {
-              this.setState({
-                count: this.state.count + 1
-              })
-            }.bind(this),
-          }, "+1"),
-          React.createElement('button', {
-            onClick: function() {
-              this.setState({
-                count: this.state.count - 1
-              })
-            }.bind(this),
-          }, "-1")
-        )
-      }
-    })
-
-    // Footer component
-    var Footer = React.createClass({
-      render: function() {
-        return React.createElement('footer', {},
-          React.createElement('small', {}, '志田雅貴')
-        )
-      }
-    })
-    
-    // コンポーネントをまとめる
-    var rootElement = React.createElement('div', {},
-      React.createElement(Header, {}),
-      React.createElement(Btn, {}),
-      React.createElement(CounterApp, {}),
-      React.createElement(Modal, {}),
-      React.createElement(Footer, {}),
-    )
-    ReactDOM.render(rootElement, document.getElementById("app"))
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>志田雅貴</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+    #app {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/javascript" src="./dist/main.js"></script>
+</body>
 </html>
