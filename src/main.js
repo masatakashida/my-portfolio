@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './style.scss';
 
 import {HeaderComponent} from './header-component';
 import {MainComponent} from './main-component';
