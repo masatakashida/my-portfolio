@@ -12,8 +12,8 @@ class App extends React.Component {
     return (
       <div>
         <HeaderComponent name="志田雅貴" />
-        <MainComponent name="志田雅貴" />
         <SubComponent name="music" />
+        <MainComponent name="志田雅貴" />
         <FooterComponent name="志田雅貴" />
       </div>
     );

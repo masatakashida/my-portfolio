@@ -15,8 +15,8 @@ export class SubComponent extends React.Component {
     console.log('クリックされた');
     this.setState({
       type: this.state.count = 1,
-      title: "タイトル１",
-      text: <p>テキスト１</p>
+      title: "",
+      text: <a href="https://twitter.com/shida_masataka" className="fl_tw2"><i className="fa fa-twitter"></i><span>Twiiter</span></a>
     });
   }
 
@@ -24,8 +24,8 @@ export class SubComponent extends React.Component {
     console.log('クリックされた');
     this.setState({
       type: this.state.count = 2,
-      title: "タイトル２",
-      text: <p>テキスト２</p>
+      title: <p>二十歳になりかけの僕</p>,
+      text: <iframe src="https://www.youtube.com/embed/s6kh9_tXrvY" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
     });
   }
 
@@ -33,20 +33,21 @@ export class SubComponent extends React.Component {
     console.log('クリックされた');
     this.setState({
       type: this.state.count = 3,
-      title: "タイトル３",
-      text: <p>テキスト</p>
+      title: <p>タクトスイッチで音声再生</p>,
+      text: <iframe src="https://www.youtube.com/embed/36E_p7ASqA8" frameBorder="0" allow="encrypted-media" allowFullScreen></iframe>
     });
   }
 
   render() {
     return (
       <div>
-        <button onClick={this.handleClick1.bind(this)}>music</button>
-        <button onClick={this.handleClick2.bind(this)}>place</button>
-        <button onClick={this.handleClick3.bind(this)}>place</button>
-        <div>{this.state.type}</div>
-        <div>{this.state.title}</div>
-        <div>{this.state.text}</div>
+        <main>
+          <button onClick={this.handleClick1.bind(this)}>PLACE</button>
+          <button onClick={this.handleClick2.bind(this)}>MUSIC</button>
+          <button onClick={this.handleClick3.bind(this)}>ENGINEER</button>
+          <div>{this.state.title}</div>
+          <div>{this.state.text}</div>
+        </main>
       </div>
     );
   }
