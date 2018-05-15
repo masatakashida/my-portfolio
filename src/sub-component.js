@@ -42,9 +42,9 @@ export class SubComponent extends React.Component {
     return (
       <div>
         <main>
-          <button onClick={this.handleClick1.bind(this)}>PLACE</button>
-          <button onClick={this.handleClick2.bind(this)}>MUSIC</button>
-          <button onClick={this.handleClick3.bind(this)}>ENGINEER</button>
+          <button className="square_btn" onClick={this.handleClick1.bind(this)}>PLACE</button>
+          <button className="square_btn" onClick={this.handleClick2.bind(this)}>MUSIC</button>
+          <button className="square_btn" onClick={this.handleClick3.bind(this)}>ENGINEER</button>
           <div>{this.state.title}</div>
           <div>{this.state.text}</div>
         </main>
