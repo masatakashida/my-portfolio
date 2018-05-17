@@ -26,9 +26,6 @@ export class MainComponent extends React.Component {
           <a href="https://github.com/masatakashida" className="fl_tw2 github">
             <i className="fa fa-twitter"></i><span>Github</span>
           </a>
-          <a href="https://peraichi.com/landing_pages/view/bokutenlab" className="fl_tw2 bokuten">
-            <i className="fa fa-twitter"></i><span>ぼくらはてんさい</span>
-          </a>
 
           <h3>music</h3>
           <p>二十歳になりかけの僕</p>
