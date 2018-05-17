@@ -74,19 +74,20 @@ twiiterボタン
   border-color: #e6ecf0;
 }
 
-.fl_tw2{/*ボタンの背景*/
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
-  display: inline-block;
-  height: 50px;/*高さ*/
-  width: 190px;/*幅*/
-  text-align: center;/*中身を中央寄せ*/
-  font-size: 20px;/*文字のサイズ*/
-  line-height: 50px;/*高さと合わせる*/
-  vertical-align: middle;/*垂直中央寄せ*/
+.fl_tw2{
+  color: #FFF;
+  border-radius: 8px;
+  display: block;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 22px;
+  vertical-align: middle;
   background: #1da1f3;
-  overflow: hidden;/*はみ出た部分を隠す*/
-  text-decoration:none;/*下線は消す*/
+  overflow: hidden;
+  text-decoration:none;
+  margin-top: 10px;
 }
 
 .fl_tw2 .fa-twitter {
