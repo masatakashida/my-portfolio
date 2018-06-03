@@ -17,7 +17,7 @@ export class MainComponent extends React.Component {
 
   render() {
     return (
-      <main>
+      <div>
         <h3>Place</h3>
         <a href="https://twitter.com/shida_masataka" className="fl_tw2">
           <i className="fa fa-twitter"></i><span>Twiiter</span>
@@ -51,7 +51,7 @@ export class MainComponent extends React.Component {
         <iframe src="https://www.youtube.com/embed/36E_p7ASqA8" frameBorder="0" allow="encrypted-media" allowFullScreen></iframe>
         <h3>Skill</h3>
         <a href="#top">↑トップへ</a>
-      </main>
+      </div>
     );
   }
 }
