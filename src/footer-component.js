@@ -11,9 +11,9 @@ export class FooterComponent extends React.Component {
 
   render() {
     return (
-      <div>
+      <footer>
         <small>&copy; 志田雅貴</small>
-      </div>
+      </footer>
     );
   }
 }
