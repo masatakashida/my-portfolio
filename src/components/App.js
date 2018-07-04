@@ -16,7 +16,7 @@ const App = () => (
   <Router>
     <div className="app">
       <div className="header">
-        <ul class="header-navi">
+        <ul class="header-nav">
           <li><Link to="/">トップ</Link></li>
           <li><Link to="/about">About me</Link></li>
           <li><Link to="/music">Music</Link></li>
