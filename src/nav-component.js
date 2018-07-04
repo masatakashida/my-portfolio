@@ -1,53 +1,34 @@
 import React from 'react';
 
-// musicというボタンをクリックすると、グレーアウトして、画面が出てくる
 export class NavComponent extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      type: 0,
-      title: "",
-      text: ""
+      value: '音楽',
     };
   }
-
-  handleClick1() {
+  handleClick() {
     console.log('クリックされた');
     this.setState({
-      type: this.state.count = 1,
-      title: "",
-      text: <a href="https://twitter.com/shida_masataka" className="fl_tw2"><i className="fa fa-twitter"></i><span>Twiiter</span></a>
+      value: this.state.value = "エンジニア"
     });
   }
-
-  handleClick2() {
-    console.log('クリックされた');
-    this.setState({
-      type: this.state.count = 2,
-      title: <p>二十歳になりかけの僕</p>,
-      text: <iframe src="https://www.youtube.com/embed/s6kh9_tXrvY" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
-    });
-  }
-
-  handleClick3() {
-    console.log('クリックされた');
-    this.setState({
-      type: this.state.count = 3,
-      title: <p>タクトスイッチで音声再生</p>,
-      text: <iframe src="https://www.youtube.com/embed/36E_p7ASqA8" frameBorder="0" allow="encrypted-media" allowFullScreen></iframe>
-    });
-  }
-
   render() {
     return (
       <div>
-        <main>
-          <button className="square_btn" onClick={this.handleClick1.bind(this)}>PLACE</button>
-          <button className="square_btn" onClick={this.handleClick2.bind(this)}>MUSIC</button>
-          <button className="square_btn" onClick={this.handleClick3.bind(this)}>ENGINEER</button>
-          <div>{this.state.title}</div>
-          <div>{this.state.text}</div>
-        </main>
+        <Child data={this.state.value} />
+        <button onClick={this.handleClick.bind(this)}>変更</button>
+      </div>
+    );
+  }
+}
+  
+// Classコンポーネントで受け取る場合
+class Child extends React.Component {
+  render() {
+    return (
+      <div>
+        {this.props.data}
       </div>
     );
   }

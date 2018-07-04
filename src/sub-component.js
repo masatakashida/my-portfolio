@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavComponent} from './nav-component';
 
 // musicというボタンをクリックすると、グレーアウトして、画面が出てくる
 export class SubComponent extends React.Component {
@@ -47,6 +48,7 @@ export class SubComponent extends React.Component {
           <button className="square_btn" onClick={this.handleClick3.bind(this)}>ENGINEER</button>
           <div>{this.state.title}</div>
           <div>{this.state.text}</div>
+          <div>{this.state.value}</div>
         </main>
       </div>
     );
