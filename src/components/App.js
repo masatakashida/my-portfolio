@@ -6,6 +6,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import TopPage from './TopPage';
 import AboutPage from './AboutPage';
 import MusicPage from './MusicPage';
 
@@ -22,7 +23,7 @@ const App = () => (
         </ul>
       </div>
       <Switch>
-        <Route exact path="/" component={AboutPage} />
+        <Route exact path="/" component={TopPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/music" component={MusicPage} />
       </Switch>
