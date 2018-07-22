@@ -15,7 +15,7 @@ const ProfilePage = () => (
       <h2 className="title">Carrier</h2>
       <p>東京理科大学退学(2014-2017)</p>
       <p>MOSOmafia intern(2017)</p>
-      <p>MOSOmafia engineer(2018)</p>
+      <p>MOSOmafia engineer(2017-)</p>
       <p>チトセロボティクス engineer(2018-)</p>
       <a className="twitter-timeline" width="80%" max-height="800" href="https://twitter.com/shida_masataka?ref_src=twsrc%5Etfw">Tweets by shida_masataka</a>
     </div>
