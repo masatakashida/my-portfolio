@@ -6,11 +6,11 @@
 
   & .header {
     margin-top: 30px;
+    background-color: white;
 
     &-nav {
       margin: 0;
       padding: 0;
-      background-color: white;
       display: flex;
       padding-bottom: 5px;
       
@@ -27,5 +27,18 @@
   }
   & .content {
     // コンテンツ部分全体
+  }
+}
+
+@media screen and (max-width:780px) {
+  .app {
+    & .header {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    & .content {
+      padding: 20px;
+    }
   }
 }
