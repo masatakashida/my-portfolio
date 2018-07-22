@@ -3,7 +3,7 @@ import React from 'react';
 const ProfilePage = () => (
   <div className="profile">
     <div className="part pro-left">
-      <span></span>
+      <img src="images/shida_s.jpg" />
     </div>
     <div className="part pro-right">
       <h2 className="title">Profile</h2>
@@ -17,7 +17,7 @@ const ProfilePage = () => (
       <p>MOSOmafia intern(2017)</p>
       <p>MOSOmafia engineer(2018)</p>
       <p>チトセロボティクス engineer(2018-)</p>
-      <a className="twitter-timeline" width="80%" max-height="800px" href="https://twitter.com/shida_masataka?ref_src=twsrc%5Etfw">Tweets by shida_masataka</a>
+      <a className="twitter-timeline" width="80%" max-height="800" href="https://twitter.com/shida_masataka?ref_src=twsrc%5Etfw">Tweets by shida_masataka</a>
     </div>
   </div>
 );
