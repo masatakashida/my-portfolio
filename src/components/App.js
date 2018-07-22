@@ -18,7 +18,7 @@ const App = () => (
     <div className="app">
       <div className="header">
         <ul class="header-nav">
-          <li><Link to="/">トップ</Link></li>
+          <li><Link to="/">Top</Link></li>
           <li><Link to="/music">Music</Link></li>
           <li><Link to="/engineering">Engineering</Link></li>
           <li><Link to="/education">Education</Link></li>
