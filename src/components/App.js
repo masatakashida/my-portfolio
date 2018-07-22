@@ -24,12 +24,14 @@ const App = () => (
           <li><Link to="/education">Education</Link></li>
         </ul>
       </div>
-      <Switch>
-        <Route exact path="/" component={ProfilePage} />
-        <Route exact path="/music" component={MusicPage} />
-        <Route exact path="/engineering" component={EngineeringPage} />
-        <Route exact path="/education" component={EducationPage} />
-      </Switch>
+      <div className="content">
+        <Switch>
+          <Route exact path="/" component={ProfilePage} />
+          <Route exact path="/music" component={MusicPage} />
+          <Route exact path="/engineering" component={EngineeringPage} />
+          <Route exact path="/education" component={EducationPage} />
+        </Switch>
+      </div>
     </div>
   </Router>
 );
