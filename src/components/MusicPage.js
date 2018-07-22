@@ -9,7 +9,7 @@ const MusicPage = () => (
     <div className="part m-right">
       <h2 className="title">Music</h2>
       <div className="description">
-        <p>人生とともにあるような曲づくりをしています。</p>
+        <p>人生とともにあるような、未来への希望を込めた曲づくりをしています。</p>
       </div>
     </div>
   </div>
