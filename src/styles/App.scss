@@ -3,17 +3,25 @@
   background-color: #FAFAFA;
   max-width: 1000px;
   margin: 0 auto;
-}
 
-.header {
-  &-nav {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    display: flex;
-    & li {
-      list-style-type: none;
+  & .header {
+    &-nav {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      display: flex;
+      
+      & li {
+        list-style-type: none;
+        
+        & a {
+          text-decoration: none;
+          color: black;
+        }
+      }
     }
   }
+  & .content {
+    // コンテンツ部分全体
+  }
 }
-
