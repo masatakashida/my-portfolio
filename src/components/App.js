@@ -26,10 +26,10 @@ const App = () => (
       </div>
       <div className="content">
         <Switch>
-          <Route exact path="/" component={ProfilePage} />
           <Route exact path="/music" component={MusicPage} />
           <Route exact path="/engineering" component={EngineeringPage} />
           <Route exact path="/education" component={EducationPage} />
+          <Route path="/" component={ProfilePage} />
         </Switch>
       </div>
     </div>
