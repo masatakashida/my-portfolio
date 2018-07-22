@@ -17,6 +17,9 @@ const ProfilePage = () => (
       <p>MOSOmafia intern(2017)</p>
       <p>MOSOmafia engineer(2017-)</p>
       <p>チトセロボティクス engineer(2018-)</p>
+      <h2 className="title">Activities</h2>
+      <p>森のあつまり(2016-2017)</p>
+      <p>ぼくらはてんさい(2016-)</p>
       <a className="twitter-timeline" width="80%" height="700" href="https://twitter.com/shida_masataka?ref_src=twsrc%5Etfw">Tweets by shida_masataka</a>
     </div>
   </div>
