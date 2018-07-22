@@ -15,7 +15,7 @@ import EngineeringPage from './EngineeringPage';
 // class指定とconst指定だとどんなことが異なるのか
 // ToDo
 const App = () => (
-  <HashRouter>
+  <HashRouter basename="/my-portfolio"/>
     <div className="app">
       <div className="header">
         <ul class="header-nav">
