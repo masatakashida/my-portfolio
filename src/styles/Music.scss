@@ -1,0 +1,15 @@
+.music {
+  display: flex;
+
+  & .part {
+    flex: 1;
+  }
+
+  & .m-left {
+
+  }
+
+  & .m-right {
+
+  }
+}
