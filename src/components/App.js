@@ -9,7 +9,7 @@ import {
 import ProfilePage from './ProfilePage';
 import MusicPage from './MusicPage';
 import EducationPage from './EducationPage';
-import EngineerPage from './EngineerPage';
+import EngineeringPage from './EngineeringPage';
 
 // class指定とconst指定だとどんなことが異なるのか
 // ToDo
@@ -20,14 +20,14 @@ const App = () => (
         <ul class="header-nav">
           <li><Link to="/">トップ</Link></li>
           <li><Link to="/music">Music</Link></li>
-          <li><Link to="/engineer">Engineer</Link></li>
+          <li><Link to="/engineering">Engineering</Link></li>
           <li><Link to="/education">Education</Link></li>
         </ul>
       </div>
       <Switch>
         <Route exact path="/" component={ProfilePage} />
         <Route exact path="/music" component={MusicPage} />
-        <Route exact path="/engineer" component={EngineerPage} />
+        <Route exact path="/engineering" component={EngineeringPage} />
         <Route exact path="/education" component={EducationPage} />
       </Switch>
     </div>

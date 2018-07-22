@@ -7,7 +7,13 @@
 
 .header {
   &-nav {
+    margin: 0;
+    padding: 0;
     background-color: white;
+    display: flex;
+    & li {
+      list-style-type: none;
+    }
   }
 }
 
