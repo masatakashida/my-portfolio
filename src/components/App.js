@@ -1,5 +1,6 @@
 import React from 'react';
-import { 
+import {
+  HashRouter,
   BrowserRouter as Router,
   Route,
   Link,
@@ -14,7 +15,7 @@ import EngineeringPage from './EngineeringPage';
 // class指定とconst指定だとどんなことが異なるのか
 // ToDo
 const App = () => (
-  <Router>
+  <HashRouter>
     <div className="app">
       <div className="header">
         <ul class="header-nav">
@@ -34,7 +35,7 @@ const App = () => (
         </Switch>
       </div>
     </div>
-  </Router>
+  </HashRouter>
 );
 
 console.log('Welcome! My Portfolio!');
