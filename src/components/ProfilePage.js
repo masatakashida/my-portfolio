@@ -3,7 +3,7 @@ import React from 'react';
 const ProfilePage = () => (
   <div className="profile">
     <div className="part pro-left">
-      <img src="images/shida_s.jpg" />
+      <img src="images/shida_ss.jpg" />
     </div>
     <div className="part pro-right">
       <h2 className="title">Profile</h2>
