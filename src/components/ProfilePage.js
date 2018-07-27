@@ -13,10 +13,10 @@ const ProfilePage = () => (
         <p>一人一人に自分の可能性や未来を明るいものと感じてもらいたい。</p>
       </div>
       <h2 className="title">Carrier</h2>
-      <p>東京理科大学退学(2014-2017)</p>
+      <p>東京理科大学中退(2014-2017)</p>
       <p>MOSOmafia intern(2017)</p>
       <p>MOSOmafia engineer(2017-)</p>
-      <p>チトセロボティクス engineer(2018-)</p>
+      <p>チトセロボティクス software engineer(2018-)</p>
       <h2 className="title">Activities</h2>
       <p>森のあつまり(2016-2017)</p>
       <p>ぼくらはてんさい(2016-)</p>
